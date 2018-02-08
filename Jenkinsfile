@@ -6,5 +6,10 @@ pipeline {
         sh 'echo "now install npm..."'
       }
     }
+    stage('Test') {
+      steps {
+        echo 'Now begin testing'
+      }
+    }
   }
 }
