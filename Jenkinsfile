@@ -9,6 +9,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Now begin testing'
+        sh './jenkins/scripts/test.sh'
       }
     }
   }
